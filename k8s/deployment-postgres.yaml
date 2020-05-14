@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres
+      tool: psql
+  template:
+    metadata:
+      labels:
+        app: postgres
+        tool: psql
+    spec:
+      containers:
+        - name: postgres
+          image: ensaas/postgres-alpine
+          imagePullPolicy: Always
+          resources:
+            limits:
+              cpu: 20m
+              memory: 128Mi
+              ephemeral-storage: 128Mi
+            requests:
+              cpu: 20m
+              memory: 128Mi
