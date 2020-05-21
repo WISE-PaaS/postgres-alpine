@@ -98,7 +98,7 @@ b39b994c-298d-4d13-bd67-b443fe35441f=> SELECT * from livingroom.temperature ORDE
 b39b994c-298d-4d13-bd67-b443fe35441f=>
 ```
 
-Now, we have successfully executed a SQL query with an internal host IP address.
+Now, we have successfully executed an SQL query with an internal host IP address.
 
 # YAML Config File
 
